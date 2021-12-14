@@ -1,11 +1,11 @@
 [[inputs.exec]]
   ## Commands array
 commands = [
-  "evmosd status | jq '.SyncInfo.latest_block_height|tonumber'"
+  "/etc/telegraf/get_node_state.sh"
  ]
 
   ## Timeout for each command to complete.
- timeout = "5s"
+ timeout = "60s"
 
   ## measurement name suffix (for separating different commands)  name_suffix = "_node_status"
 
